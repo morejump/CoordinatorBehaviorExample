@@ -1,20 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="saulmm.myapplication" >
+    package="saulmm.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MyCorrection" />
+        <activity android:name=".itemOnListCorrection" />
+        <activity android:name=".ItWork" />
+        <activity android:name=".Notification" />
+        <activity android:name=".friend_request" />
+        <activity android:name=".TextFollowView" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".Reply" />
+        <activity android:name=".GiveFeedbackAnswer" />
+        <activity android:name=".GiveFeedbackAudio" />
+        <activity android:name=".SettingNotification"></activity>
+        <activity android:name=".ShowStuff" />
+        <activity android:name=".ContactUs">
+
+        </activity>
+        <activity android:name=".RadioButton"></activity>
+        <activity android:name=".Voucher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 

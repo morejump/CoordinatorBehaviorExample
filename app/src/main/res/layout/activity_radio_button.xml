@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="saulmm.myapplication.RadioButton">
+    <FrameLayout
+        android:id="@+id/mFame"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgBackground"
+            android:elevation="4dp"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <com.dinuscxj.progressbar.CircleProgressBar
+            android:layout_gravity="center"
+            android:elevation="4dp"
+            app:progress_stroke_width="2dp"
+            app:background_color="#FFFFFF"
+            app:draw_progress_text="false"
+            android:id="@+id/line_progress"
+            app:style="solid_line"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <ImageView
+            android:id="@+id/ic_red_trash_button"
+            android:src="@drawable/ic_red_trash_button"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+
+        <ImageView
+            android:id="@+id/imgMic"
+            android:elevation="4dp"
+            android:src="@drawable/ic_blue_mic"
+            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

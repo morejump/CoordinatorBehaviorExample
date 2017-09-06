@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="saulmm.myapplication.SettingNotification">
+    <RelativeLayout
+        android:id="@+id/normalItem"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtTypeNotify"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="Correction recieved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtExample"
+            android:layout_marginTop="32dp"
+            android:layout_below="@id/txtTypeNotify"
+            android:textSize="16dp"
+            android:text="e.g Thao has corrected your exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:layout_alignBaseline="@id/txtTypeNotify"
+            android:layout_alignParentEnd="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/privateMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/generalNotify"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtGeneral"
+            android:textColor="#2693FF"
+            android:text="GENERAL"
+            android:textAllCaps="true"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtNotification"
+            android:layout_marginTop="48dp"
+            android:layout_below="@id/txtGeneral"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="Notifications"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp" />
+        <Switch
+            android:layout_toRightOf="@id/txtNotification"
+            android:layout_marginTop="64dp"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/txtGeneral"
+            android:id="@+id/switchGeneralNotify"
+            android:layout_alignParentEnd="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

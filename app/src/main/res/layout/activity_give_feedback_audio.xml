@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="32dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:elevation="5dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="#0080FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_marginLeft="32dp"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@id/imgBack"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="Correct Exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imgSend"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_send"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@drawable/background_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            tools:context="saulmm.myapplication.GiveFeedbackAnswer">
+
+            <ImageView
+                android:id="@+id/img_cover_culture"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_culture_cover" />
+
+            <TextView
+                android:id="@+id/txtQuestion"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:layout_width="match_parent"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_cover_culture"
+                android:background="@drawable/back"
+                android:elevation="2dp"
+                android:padding="16dp"
+                android:text="What are the thing that define a culture?"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/txtHint"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/txtQuestion"
+                android:textSize="16dp"
+                android:text="Hold the button to record your correction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <!--<TextView-->
+            <!--android:layout_marginTop="32dp"-->
+            <!--android:background="@drawable/back"-->
+            <!--android:text="thao handsome"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+    </ScrollView>
+
+</RelativeLayout>

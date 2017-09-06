@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txtGeneral"
+        android:textColor="#2693FF"
+        android:text="GENERAL"
+        android:textAllCaps="true"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txtNotification"
+        android:layout_marginTop="48dp"
+        android:layout_below="@id/txtGeneral"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:text="Notifications"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp" />
+    <Switch
+        android:layout_toRightOf="@id/txtNotification"
+        android:layout_marginTop="48dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/txtGeneral"
+        android:id="@+id/switchGeneralNotify"
+        android:layout_alignParentEnd="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp" />
+    <View
+        android:layout_below="@id/txtNotification"
+        android:background="#B2B0B3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+</RelativeLayout>

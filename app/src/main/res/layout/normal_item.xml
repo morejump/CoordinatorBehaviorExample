@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/mHeader"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtTypeNotify"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="Correction recieved"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:enabled="false"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtExample"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/mHeader"
+        android:textSize="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="e.g Thao has corrected your exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_below="@id/txtExample"
+        android:background="#B2B0B3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+
+</RelativeLayout>
